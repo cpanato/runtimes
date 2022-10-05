@@ -26,7 +26,7 @@ jobs:
       with:
         images: docker.io/ctadeu/php81
 
-    - uses: chainguard-images/actions/apko-snapshot@main
+    - uses: cpanato/chainguard-images-actions/apko-snapshot@updates
       with:
         config: php81/apko.yaml
         base-tag: docker.io/ctadeu/php81
