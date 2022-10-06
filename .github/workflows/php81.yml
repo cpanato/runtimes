@@ -27,7 +27,7 @@ jobs:
         images: docker.io/ctadeu/php81
 
     - run: cat $HOME/.docker/config.json
-    - run: echo $HOME
+    - run: cp $HOME/.docker/config.json .
 
     - uses: cpanato/chainguard-images-actions/apko-snapshot@updates
       with:
