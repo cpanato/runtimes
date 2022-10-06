@@ -9,6 +9,9 @@ jobs:
     name: Release OCI image
     runs-on: ubuntu-latest
 
+    permissions:
+      id-token: write
+
     outputs:
       image-refs: ${{ steps.emit-refs.outputs.image-refs }}
 
